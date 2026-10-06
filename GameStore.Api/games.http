@@ -1,0 +1,31 @@
+@hostAddress = http://localhost:5274
+
+GET {{hostAddress}}/games
+
+###
+GET {{hostAddress}}/games/1
+
+###
+POST {{hostAddress}}/games
+Content-Type: application/json
+
+{
+    "name": "Mario Kart 8 Deluxe",
+    "genreId": 4,
+    "price": 49.99,
+    "releaseDate": "2014-05-29"
+}
+
+###
+PUT {{hostAddress}}/games/3
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genreId": 1,
+    "price": 19.99,
+    "releaseDate": "1991-02-01"
+}
+
+###
+DELETE {{hostAddress}}/games/8

@@ -1,0 +1,3 @@
+@hostAddress = http://localhost:5274
+
+GET {{hostAddress}}/genres
